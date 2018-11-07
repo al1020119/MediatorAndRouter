@@ -16,7 +16,7 @@ App架构之组件化策略，MGJRouter(URLRouter) 和 CTMediator(Target-Action)
 ### 1. 博客文章:
 
 
-  + [模块化与解耦](模块化与解耦 - 刘坤的技术博客)
+  + [[模块化与解耦](模块化与解耦 - 刘坤的技术博客)](https://blog.cnbluebox.com/blog/2015/11/28/module-and-decoupling/)
 
 
   + [浅析 iOS 应用组件化设计](Skyline75489)
