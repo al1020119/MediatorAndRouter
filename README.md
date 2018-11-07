@@ -1,7 +1,7 @@
 # MediatorAndRouter
 App架构之组件化策略，MGJRouter(URLRouter) 和 CTMediator(Target-Action)，实战与项目介入，相关细节实现
 
-### 推荐：
+## 强烈推荐：
 
 ##### iOS组件化方案对比 https://blog.csdn.net/mlcldh/article/details/82887997?from=timeline&isappinstalled=0
 
@@ -10,7 +10,7 @@ App架构之组件化策略，MGJRouter(URLRouter) 和 CTMediator(Target-Action)
 ##### iOS应用架构谈 组件化方案  https://casatwy.com/iOS-Modulization.html
 
 
-组件化/模块化
+## 组件化/模块化
 
 
 ### 1. 博客文章:
