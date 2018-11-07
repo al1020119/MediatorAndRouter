@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B512FB0E2192ED2A002D47BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB0D2192ED2A002D47BD /* AppDelegate.m */; };
+		B512FB112192ED2A002D47BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB102192ED2A002D47BD /* ViewController.m */; };
+		B512FB142192ED2A002D47BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512FB122192ED2A002D47BD /* Main.storyboard */; };
+		B512FB162192ED2A002D47BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B512FB152192ED2A002D47BD /* Assets.xcassets */; };
+		B512FB192192ED2A002D47BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B512FB172192ED2A002D47BD /* LaunchScreen.storyboard */; };
+		B512FB1C2192ED2A002D47BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB1B2192ED2A002D47BD /* main.m */; };
+		B512FB282192EE3D002D47BD /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB272192EE3D002D47BD /* MGJRouter.m */; };
+		B512FB2B2192EE4A002D47BD /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB292192EE4A002D47BD /* CTMediator.m */; };
+		B512FB2F2192EE8E002D47BD /* RouterMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB2E2192EE8E002D47BD /* RouterMainViewController.m */; };
+		B512FB332192EEA6002D47BD /* MediatorMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB322192EEA6002D47BD /* MediatorMainViewController.m */; };
+		B512FB372192F33D002D47BD /* CommonRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB362192F33D002D47BD /* CommonRouter.m */; };
+		B512FB3B2192F367002D47BD /* RouterCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB3A2192F367002D47BD /* RouterCategoryViewController.m */; };
+		B512FB3E2192F374002D47BD /* RouterNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB3D2192F374002D47BD /* RouterNextViewController.m */; };
+		B512FB412192F37D002D47BD /* RouterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB402192F37D002D47BD /* RouterDetailViewController.m */; };
+		B512FB442192F385002D47BD /* RouterHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB432192F385002D47BD /* RouterHomeViewController.m */; };
+		B512FB58219302A0002D47BD /* CTMediator+ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB4A219302A0002D47BD /* CTMediator+ModuleB.m */; };
+		B512FB59219302A0002D47BD /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB4E219302A0002D47BD /* BViewController.m */; };
+		B512FB5A219302A0002D47BD /* Target_ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB4F219302A0002D47BD /* Target_ModuleB.m */; };
+		B512FB5B219302A0002D47BD /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB52219302A0002D47BD /* AViewController.m */; };
+		B512FB5C219302A0002D47BD /* Target_ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB53219302A0002D47BD /* Target_ModuleA.m */; };
+		B512FB5D219302A0002D47BD /* CTMediator+ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB57219302A0002D47BD /* CTMediator+ModuleA.m */; };
+		B512FB60219302B2002D47BD /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB5F219302B2002D47BD /* SingleViewController.m */; };
+		B512FB6821930386002D47BD /* Target_MediatorHomeService.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB6721930386002D47BD /* Target_MediatorHomeService.m */; };
+		B512FB6B21930396002D47BD /* Target_MediatorDetailService.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB6A21930396002D47BD /* Target_MediatorDetailService.m */; };
+		B512FB6E219303A3002D47BD /* MediatorHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB6D219303A3002D47BD /* MediatorHomeViewController.m */; };
+		B512FB74219303DC002D47BD /* MediatorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB73219303DC002D47BD /* MediatorDetailViewController.m */; };
+		B512FB7721930400002D47BD /* MediatorCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB7621930400002D47BD /* MediatorCategoryViewController.m */; };
+		B512FB7A2193040B002D47BD /* Target_MediatorCategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB792193040B002D47BD /* Target_MediatorCategoryService.m */; };
+		B512FB802193043D002D47BD /* MediatorNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB7F2193043D002D47BD /* MediatorNextViewController.m */; };
+		B512FB8321930468002D47BD /* Target_MediatorNextService.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB8221930468002D47BD /* Target_MediatorNextService.m */; };
+		B512FB89219304C4002D47BD /* CTMediator+CategoryExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB88219304C4002D47BD /* CTMediator+CategoryExtension.m */; };
+		B512FB8C219304D0002D47BD /* CTMediator+NextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB8B219304D0002D47BD /* CTMediator+NextExtension.m */; };
+		B512FB8F219304D9002D47BD /* CTMediator+HomeExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB8E219304D9002D47BD /* CTMediator+HomeExtension.m */; };
+		B512FB92219304E4002D47BD /* CTMediator+DetailExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B512FB91219304E4002D47BD /* CTMediator+DetailExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B512FB092192ED2A002D47BD /* MediatorRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediatorRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B512FB0C2192ED2A002D47BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B512FB0D2192ED2A002D47BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B512FB0F2192ED2A002D47BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B512FB102192ED2A002D47BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B512FB132192ED2A002D47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B512FB152192ED2A002D47BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B512FB182192ED2A002D47BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B512FB1A2192ED2A002D47BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B512FB1B2192ED2A002D47BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B512FB262192EE3D002D47BD /* MGJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGJRouter.h; sourceTree = "<group>"; };
+		B512FB272192EE3D002D47BD /* MGJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGJRouter.m; sourceTree = "<group>"; };
+		B512FB292192EE4A002D47BD /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
+		B512FB2A2192EE4A002D47BD /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
+		B512FB2D2192EE8E002D47BD /* RouterMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterMainViewController.h; sourceTree = "<group>"; };
+		B512FB2E2192EE8E002D47BD /* RouterMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterMainViewController.m; sourceTree = "<group>"; };
+		B512FB312192EEA6002D47BD /* MediatorMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorMainViewController.h; sourceTree = "<group>"; };
+		B512FB322192EEA6002D47BD /* MediatorMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorMainViewController.m; sourceTree = "<group>"; };
+		B512FB352192F33D002D47BD /* CommonRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonRouter.h; sourceTree = "<group>"; };
+		B512FB362192F33D002D47BD /* CommonRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonRouter.m; sourceTree = "<group>"; };
+		B512FB392192F367002D47BD /* RouterCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterCategoryViewController.h; sourceTree = "<group>"; };
+		B512FB3A2192F367002D47BD /* RouterCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterCategoryViewController.m; sourceTree = "<group>"; };
+		B512FB3C2192F374002D47BD /* RouterNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterNextViewController.h; sourceTree = "<group>"; };
+		B512FB3D2192F374002D47BD /* RouterNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterNextViewController.m; sourceTree = "<group>"; };
+		B512FB3F2192F37D002D47BD /* RouterDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterDetailViewController.h; sourceTree = "<group>"; };
+		B512FB402192F37D002D47BD /* RouterDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterDetailViewController.m; sourceTree = "<group>"; };
+		B512FB422192F385002D47BD /* RouterHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterHomeViewController.h; sourceTree = "<group>"; };
+		B512FB432192F385002D47BD /* RouterHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterHomeViewController.m; sourceTree = "<group>"; };
+		B512FB49219302A0002D47BD /* CTMediator+ModuleB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+ModuleB.h"; sourceTree = "<group>"; };
+		B512FB4A219302A0002D47BD /* CTMediator+ModuleB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+ModuleB.m"; sourceTree = "<group>"; };
+		B512FB4C219302A0002D47BD /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		B512FB4D219302A0002D47BD /* Target_ModuleB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_ModuleB.h; sourceTree = "<group>"; };
+		B512FB4E219302A0002D47BD /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		B512FB4F219302A0002D47BD /* Target_ModuleB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleB.m; sourceTree = "<group>"; };
+		B512FB51219302A0002D47BD /* Target_ModuleA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_ModuleA.h; sourceTree = "<group>"; };
+		B512FB52219302A0002D47BD /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		B512FB53219302A0002D47BD /* Target_ModuleA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_ModuleA.m; sourceTree = "<group>"; };
+		B512FB54219302A0002D47BD /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		B512FB56219302A0002D47BD /* CTMediator+ModuleA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+ModuleA.h"; sourceTree = "<group>"; };
+		B512FB57219302A0002D47BD /* CTMediator+ModuleA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+ModuleA.m"; sourceTree = "<group>"; };
+		B512FB5E219302B2002D47BD /* SingleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		B512FB5F219302B2002D47BD /* SingleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		B512FB6621930386002D47BD /* Target_MediatorHomeService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MediatorHomeService.h; sourceTree = "<group>"; };
+		B512FB6721930386002D47BD /* Target_MediatorHomeService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MediatorHomeService.m; sourceTree = "<group>"; };
+		B512FB6921930396002D47BD /* Target_MediatorDetailService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MediatorDetailService.h; sourceTree = "<group>"; };
+		B512FB6A21930396002D47BD /* Target_MediatorDetailService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MediatorDetailService.m; sourceTree = "<group>"; };
+		B512FB6C219303A3002D47BD /* MediatorHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorHomeViewController.h; sourceTree = "<group>"; };
+		B512FB6D219303A3002D47BD /* MediatorHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorHomeViewController.m; sourceTree = "<group>"; };
+		B512FB72219303DC002D47BD /* MediatorDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorDetailViewController.h; sourceTree = "<group>"; };
+		B512FB73219303DC002D47BD /* MediatorDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorDetailViewController.m; sourceTree = "<group>"; };
+		B512FB7521930400002D47BD /* MediatorCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorCategoryViewController.h; sourceTree = "<group>"; };
+		B512FB7621930400002D47BD /* MediatorCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorCategoryViewController.m; sourceTree = "<group>"; };
+		B512FB782193040B002D47BD /* Target_MediatorCategoryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MediatorCategoryService.h; sourceTree = "<group>"; };
+		B512FB792193040B002D47BD /* Target_MediatorCategoryService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MediatorCategoryService.m; sourceTree = "<group>"; };
+		B512FB7E2193043D002D47BD /* MediatorNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorNextViewController.h; sourceTree = "<group>"; };
+		B512FB7F2193043D002D47BD /* MediatorNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatorNextViewController.m; sourceTree = "<group>"; };
+		B512FB8121930468002D47BD /* Target_MediatorNextService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_MediatorNextService.h; sourceTree = "<group>"; };
+		B512FB8221930468002D47BD /* Target_MediatorNextService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_MediatorNextService.m; sourceTree = "<group>"; };
+		B512FB87219304C4002D47BD /* CTMediator+CategoryExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+CategoryExtension.h"; sourceTree = "<group>"; };
+		B512FB88219304C4002D47BD /* CTMediator+CategoryExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+CategoryExtension.m"; sourceTree = "<group>"; };
+		B512FB8A219304D0002D47BD /* CTMediator+NextExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+NextExtension.h"; sourceTree = "<group>"; };
+		B512FB8B219304D0002D47BD /* CTMediator+NextExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+NextExtension.m"; sourceTree = "<group>"; };
+		B512FB8D219304D9002D47BD /* CTMediator+HomeExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+HomeExtension.h"; sourceTree = "<group>"; };
+		B512FB8E219304D9002D47BD /* CTMediator+HomeExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+HomeExtension.m"; sourceTree = "<group>"; };
+		B512FB90219304E4002D47BD /* CTMediator+DetailExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+DetailExtension.h"; sourceTree = "<group>"; };
+		B512FB91219304E4002D47BD /* CTMediator+DetailExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+DetailExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B512FB062192ED2A002D47BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B512FB002192ED2A002D47BD = {
+			isa = PBXGroup;
+			children = (
+				B512FB0B2192ED2A002D47BD /* MediatorRouter */,
+				B512FB0A2192ED2A002D47BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B512FB0A2192ED2A002D47BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB092192ED2A002D47BD /* MediatorRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B512FB0B2192ED2A002D47BD /* MediatorRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB232192EDB8002D47BD /* Router */,
+				B512FB222192EDAF002D47BD /* Mediator */,
+				B512FB0C2192ED2A002D47BD /* AppDelegate.h */,
+				B512FB0D2192ED2A002D47BD /* AppDelegate.m */,
+				B512FB0F2192ED2A002D47BD /* ViewController.h */,
+				B512FB102192ED2A002D47BD /* ViewController.m */,
+				B512FB122192ED2A002D47BD /* Main.storyboard */,
+				B512FB152192ED2A002D47BD /* Assets.xcassets */,
+				B512FB172192ED2A002D47BD /* LaunchScreen.storyboard */,
+				B512FB1A2192ED2A002D47BD /* Info.plist */,
+				B512FB1B2192ED2A002D47BD /* main.m */,
+				B512FB4721930280002D47BD /* Others */,
+			);
+			path = MediatorRouter;
+			sourceTree = "<group>";
+		};
+		B512FB222192EDAF002D47BD /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB462193025B002D47BD /* Models */,
+				B512FB302192EE9C002D47BD /* MediatorHome */,
+				B512FB252192EE32002D47BD /* CTMediator */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		B512FB232192EDB8002D47BD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB382192F34E002D47BD /* Models */,
+				B512FB342192F32A002D47BD /* Common */,
+				B512FB2C2192EE75002D47BD /* RootHome */,
+				B512FB242192EE1D002D47BD /* MGJRouter */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B512FB242192EE1D002D47BD /* MGJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB262192EE3D002D47BD /* MGJRouter.h */,
+				B512FB272192EE3D002D47BD /* MGJRouter.m */,
+			);
+			path = MGJRouter;
+			sourceTree = "<group>";
+		};
+		B512FB252192EE32002D47BD /* CTMediator */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB2A2192EE4A002D47BD /* CTMediator.h */,
+				B512FB292192EE4A002D47BD /* CTMediator.m */,
+			);
+			path = CTMediator;
+			sourceTree = "<group>";
+		};
+		B512FB2C2192EE75002D47BD /* RootHome */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB2D2192EE8E002D47BD /* RouterMainViewController.h */,
+				B512FB2E2192EE8E002D47BD /* RouterMainViewController.m */,
+			);
+			path = RootHome;
+			sourceTree = "<group>";
+		};
+		B512FB302192EE9C002D47BD /* MediatorHome */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB312192EEA6002D47BD /* MediatorMainViewController.h */,
+				B512FB322192EEA6002D47BD /* MediatorMainViewController.m */,
+			);
+			path = MediatorHome;
+			sourceTree = "<group>";
+		};
+		B512FB342192F32A002D47BD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB352192F33D002D47BD /* CommonRouter.h */,
+				B512FB362192F33D002D47BD /* CommonRouter.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B512FB382192F34E002D47BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB392192F367002D47BD /* RouterCategoryViewController.h */,
+				B512FB3A2192F367002D47BD /* RouterCategoryViewController.m */,
+				B512FB3C2192F374002D47BD /* RouterNextViewController.h */,
+				B512FB3D2192F374002D47BD /* RouterNextViewController.m */,
+				B512FB3F2192F37D002D47BD /* RouterDetailViewController.h */,
+				B512FB402192F37D002D47BD /* RouterDetailViewController.m */,
+				B512FB422192F385002D47BD /* RouterHomeViewController.h */,
+				B512FB432192F385002D47BD /* RouterHomeViewController.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B512FB462193025B002D47BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB622193031E002D47BD /* Category */,
+				B512FB6121930319002D47BD /* Home */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B512FB4721930280002D47BD /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB5E219302B2002D47BD /* SingleViewController.h */,
+				B512FB5F219302B2002D47BD /* SingleViewController.m */,
+				B512FB50219302A0002D47BD /* ModuleA */,
+				B512FB55219302A0002D47BD /* ModuleACategory */,
+				B512FB4B219302A0002D47BD /* ModuleB */,
+				B512FB48219302A0002D47BD /* ModuleBCategory */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B512FB48219302A0002D47BD /* ModuleBCategory */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB49219302A0002D47BD /* CTMediator+ModuleB.h */,
+				B512FB4A219302A0002D47BD /* CTMediator+ModuleB.m */,
+			);
+			path = ModuleBCategory;
+			sourceTree = "<group>";
+		};
+		B512FB4B219302A0002D47BD /* ModuleB */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB4C219302A0002D47BD /* BViewController.h */,
+				B512FB4D219302A0002D47BD /* Target_ModuleB.h */,
+				B512FB4E219302A0002D47BD /* BViewController.m */,
+				B512FB4F219302A0002D47BD /* Target_ModuleB.m */,
+			);
+			path = ModuleB;
+			sourceTree = "<group>";
+		};
+		B512FB50219302A0002D47BD /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB51219302A0002D47BD /* Target_ModuleA.h */,
+				B512FB52219302A0002D47BD /* AViewController.m */,
+				B512FB53219302A0002D47BD /* Target_ModuleA.m */,
+				B512FB54219302A0002D47BD /* AViewController.h */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		B512FB55219302A0002D47BD /* ModuleACategory */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB56219302A0002D47BD /* CTMediator+ModuleA.h */,
+				B512FB57219302A0002D47BD /* CTMediator+ModuleA.m */,
+			);
+			path = ModuleACategory;
+			sourceTree = "<group>";
+		};
+		B512FB6121930319002D47BD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB6C219303A3002D47BD /* MediatorHomeViewController.h */,
+				B512FB6D219303A3002D47BD /* MediatorHomeViewController.m */,
+				B512FB6621930386002D47BD /* Target_MediatorHomeService.h */,
+				B512FB6721930386002D47BD /* Target_MediatorHomeService.m */,
+				B512FB8D219304D9002D47BD /* CTMediator+HomeExtension.h */,
+				B512FB8E219304D9002D47BD /* CTMediator+HomeExtension.m */,
+				B512FB642193032D002D47BD /* Detail */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B512FB622193031E002D47BD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB7521930400002D47BD /* MediatorCategoryViewController.h */,
+				B512FB7621930400002D47BD /* MediatorCategoryViewController.m */,
+				B512FB782193040B002D47BD /* Target_MediatorCategoryService.h */,
+				B512FB792193040B002D47BD /* Target_MediatorCategoryService.m */,
+				B512FB87219304C4002D47BD /* CTMediator+CategoryExtension.h */,
+				B512FB88219304C4002D47BD /* CTMediator+CategoryExtension.m */,
+				B512FB6321930327002D47BD /* Next */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B512FB6321930327002D47BD /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB7E2193043D002D47BD /* MediatorNextViewController.h */,
+				B512FB7F2193043D002D47BD /* MediatorNextViewController.m */,
+				B512FB8121930468002D47BD /* Target_MediatorNextService.h */,
+				B512FB8221930468002D47BD /* Target_MediatorNextService.m */,
+				B512FB8A219304D0002D47BD /* CTMediator+NextExtension.h */,
+				B512FB8B219304D0002D47BD /* CTMediator+NextExtension.m */,
+			);
+			path = Next;
+			sourceTree = "<group>";
+		};
+		B512FB642193032D002D47BD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B512FB72219303DC002D47BD /* MediatorDetailViewController.h */,
+				B512FB73219303DC002D47BD /* MediatorDetailViewController.m */,
+				B512FB6921930396002D47BD /* Target_MediatorDetailService.h */,
+				B512FB6A21930396002D47BD /* Target_MediatorDetailService.m */,
+				B512FB90219304E4002D47BD /* CTMediator+DetailExtension.h */,
+				B512FB91219304E4002D47BD /* CTMediator+DetailExtension.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B512FB082192ED2A002D47BD /* MediatorRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B512FB1F2192ED2A002D47BD /* Build configuration list for PBXNativeTarget "MediatorRouter" */;
+			buildPhases = (
+				B512FB052192ED2A002D47BD /* Sources */,
+				B512FB062192ED2A002D47BD /* Frameworks */,
+				B512FB072192ED2A002D47BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediatorRouter;
+			productName = MediatorRouter;
+			productReference = B512FB092192ED2A002D47BD /* MediatorRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B512FB012192ED2A002D47BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = iCocos;
+				TargetAttributes = {
+					B512FB082192ED2A002D47BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B512FB042192ED2A002D47BD /* Build configuration list for PBXProject "MediatorRouter" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B512FB002192ED2A002D47BD;
+			productRefGroup = B512FB0A2192ED2A002D47BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B512FB082192ED2A002D47BD /* MediatorRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B512FB072192ED2A002D47BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512FB192192ED2A002D47BD /* LaunchScreen.storyboard in Resources */,
+				B512FB162192ED2A002D47BD /* Assets.xcassets in Resources */,
+				B512FB142192ED2A002D47BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B512FB052192ED2A002D47BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512FB332192EEA6002D47BD /* MediatorMainViewController.m in Sources */,
+				B512FB412192F37D002D47BD /* RouterDetailViewController.m in Sources */,
+				B512FB8F219304D9002D47BD /* CTMediator+HomeExtension.m in Sources */,
+				B512FB2F2192EE8E002D47BD /* RouterMainViewController.m in Sources */,
+				B512FB112192ED2A002D47BD /* ViewController.m in Sources */,
+				B512FB372192F33D002D47BD /* CommonRouter.m in Sources */,
+				B512FB6821930386002D47BD /* Target_MediatorHomeService.m in Sources */,
+				B512FB58219302A0002D47BD /* CTMediator+ModuleB.m in Sources */,
+				B512FB2B2192EE4A002D47BD /* CTMediator.m in Sources */,
+				B512FB6B21930396002D47BD /* Target_MediatorDetailService.m in Sources */,
+				B512FB59219302A0002D47BD /* BViewController.m in Sources */,
+				B512FB7A2193040B002D47BD /* Target_MediatorCategoryService.m in Sources */,
+				B512FB7721930400002D47BD /* MediatorCategoryViewController.m in Sources */,
+				B512FB74219303DC002D47BD /* MediatorDetailViewController.m in Sources */,
+				B512FB60219302B2002D47BD /* SingleViewController.m in Sources */,
+				B512FB92219304E4002D47BD /* CTMediator+DetailExtension.m in Sources */,
+				B512FB8C219304D0002D47BD /* CTMediator+NextExtension.m in Sources */,
+				B512FB442192F385002D47BD /* RouterHomeViewController.m in Sources */,
+				B512FB89219304C4002D47BD /* CTMediator+CategoryExtension.m in Sources */,
+				B512FB282192EE3D002D47BD /* MGJRouter.m in Sources */,
+				B512FB1C2192ED2A002D47BD /* main.m in Sources */,
+				B512FB3B2192F367002D47BD /* RouterCategoryViewController.m in Sources */,
+				B512FB5B219302A0002D47BD /* AViewController.m in Sources */,
+				B512FB5D219302A0002D47BD /* CTMediator+ModuleA.m in Sources */,
+				B512FB802193043D002D47BD /* MediatorNextViewController.m in Sources */,
+				B512FB3E2192F374002D47BD /* RouterNextViewController.m in Sources */,
+				B512FB6E219303A3002D47BD /* MediatorHomeViewController.m in Sources */,
+				B512FB5A219302A0002D47BD /* Target_ModuleB.m in Sources */,
+				B512FB0E2192ED2A002D47BD /* AppDelegate.m in Sources */,
+				B512FB5C219302A0002D47BD /* Target_ModuleA.m in Sources */,
+				B512FB8321930468002D47BD /* Target_MediatorNextService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B512FB122192ED2A002D47BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B512FB132192ED2A002D47BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B512FB172192ED2A002D47BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B512FB182192ED2A002D47BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B512FB1D2192ED2A002D47BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B512FB1E2192ED2A002D47BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B512FB202192ED2A002D47BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCFEBWFYQR;
+				INFOPLIST_FILE = MediatorRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iCocos.MediatorRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B512FB212192ED2A002D47BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RCFEBWFYQR;
+				INFOPLIST_FILE = MediatorRouter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iCocos.MediatorRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B512FB042192ED2A002D47BD /* Build configuration list for PBXProject "MediatorRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B512FB1D2192ED2A002D47BD /* Debug */,
+				B512FB1E2192ED2A002D47BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B512FB1F2192ED2A002D47BD /* Build configuration list for PBXNativeTarget "MediatorRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B512FB202192ED2A002D47BD /* Debug */,
+				B512FB212192ED2A002D47BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B512FB012192ED2A002D47BD /* Project object */;
+}
