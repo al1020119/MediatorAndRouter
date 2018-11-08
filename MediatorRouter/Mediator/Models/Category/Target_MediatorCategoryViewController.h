@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Target_MediatorCategoryService : NSObject
+@interface Target_MediatorCategoryViewController : NSObject
 
-- (UIViewController *)Action_CategoryViewController:(NSDictionary *)param;
+- (UIViewController *)Action_MediatorCategoryViewController:(NSDictionary *)param;
 
 @end

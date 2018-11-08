@@ -6,15 +6,15 @@
 //  Copyright © 2018年 iCocos. All rights reserved.
 //
 
-#import "Target_MediatorDetailService.h"
+#import "Target_MediatorDetailViewController.h"
 
 #import "MediatorDetailViewController.h"
 
-@interface Target_MediatorDetailService ()
+@interface Target_MediatorDetailViewController ()
 
 @end
 
-@implementation Target_MediatorDetailService
+@implementation Target_MediatorDetailViewController
 
 - (UIViewController *)Action_MediatorDetailViewController:(NSDictionary *)param;
 {

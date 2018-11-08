@@ -7,17 +7,17 @@
 //  Copyright © 2018年 iCocos. All rights reserved.
 //
 
-#import "Target_MediatorCategoryService.h"
+#import "Target_MediatorCategoryViewController.h"
 
 #import "MediatorCategoryViewController.h"
 
-@interface Target_MediatorCategoryService ()
+@interface Target_MediatorCategoryViewController ()
 
 @end
 
-@implementation Target_MediatorCategoryService
+@implementation Target_MediatorCategoryViewController
 
-- (UIViewController *)Action_CategoryViewController:(NSDictionary *)param;
+- (UIViewController *)Action_MediatorCategoryViewController:(NSDictionary *)param;
 {
     
     MediatorCategoryViewController * vc = [[MediatorCategoryViewController alloc] init];

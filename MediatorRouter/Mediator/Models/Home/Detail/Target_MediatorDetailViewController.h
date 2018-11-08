@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Target_MediatorDetailService : NSObject
+@interface Target_MediatorDetailViewController : NSObject
 
 - (UIViewController *)Action_MediatorDetailViewController:(NSDictionary *)param;
 

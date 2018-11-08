@@ -6,13 +6,13 @@
 //  Copyright © 2018年 iCocos. All rights reserved.
 //
 
-#import "Target_MediatorNextService.h"
+#import "Target_MediatorNextViewController.h"
 
 #import "MediatorNextViewController.h"
 
-@implementation Target_MediatorNextService
+@implementation Target_MediatorNextViewController
 
-- (UIViewController *)Action_NextViewController:(NSDictionary *)param;
+- (UIViewController *)Action_MediatorNextViewController:(NSDictionary *)param;
 {
     MediatorNextViewController * vc = [[MediatorNextViewController alloc] init];
     vc.navigationItem.title = param[@"title"];

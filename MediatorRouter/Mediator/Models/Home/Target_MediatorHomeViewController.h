@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Target_MediatorHomeService : NSObject
+@interface Target_MediatorHomeViewController : NSObject
 
 - (UIViewController *)Action_MediatorHomeViewController:(NSDictionary *)param;
 

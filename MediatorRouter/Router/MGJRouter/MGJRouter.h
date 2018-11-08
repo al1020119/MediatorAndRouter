@@ -113,4 +113,5 @@ typedef id (^MGJRouterObjectHandler)(NSDictionary *routerParameters);
  *  @return 返回生成的URL String
  */
 + (NSString *)generateURLWithPattern:(NSString *)pattern parameters:(NSArray *)parameters;
+
 @end

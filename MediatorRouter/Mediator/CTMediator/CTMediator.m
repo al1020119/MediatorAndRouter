@@ -37,7 +37,7 @@ NSString * const kCTMediatorParamsKeySwiftTargetModuleName = @"kCTMediatorParams
  */
 //scheme://[target]/[action]?[params]
 //aaa://targetA/actionB?id=1234
-- (id)performActionWithUrl:(NSURL *)url completion:(void (^)(NSDictionary * _Nonnull))completion {
+- (id)performActionWithUrl:(NSURL *)url completion:(void (^)(NSDictionary *))completion {
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     

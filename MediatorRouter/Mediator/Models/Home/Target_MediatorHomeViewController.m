@@ -6,15 +6,15 @@
 //  Copyright © 2018年 iCocos. All rights reserved.
 //
 
-#import "Target_MediatorHomeService.h"
+#import "Target_MediatorHomeViewController.h"
 
 #import "MediatorHomeViewController.h"
 
-@interface Target_MediatorHomeService ()
+@interface Target_MediatorHomeViewController ()
 
 @end
 
-@implementation Target_MediatorHomeService
+@implementation Target_MediatorHomeViewController
 
 - (UIViewController *)Action_MediatorHomeViewController:(NSDictionary *)param;
 {

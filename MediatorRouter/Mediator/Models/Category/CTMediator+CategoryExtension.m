@@ -15,7 +15,7 @@
 {
     NSMutableDictionary * dict = @{}.mutableCopy;
     [dict setValue:title forKey:@"title"];
-    return [self performTarget:@"RouterCategoryViewController" action:@"RouterCategoryViewController" params:dict shouldCacheTarget:NO];
+    return [self performTarget:@"MediatorCategoryViewController" action:@"MediatorCategoryViewController" params:dict shouldCacheTarget:NO];
 }
 
 @end

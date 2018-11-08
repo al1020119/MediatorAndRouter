@@ -16,19 +16,19 @@ NSString *const MGJRouterParameterURL = @"MGJRouterParameterURL";
 NSString *const MGJRouterParameterCompletion = @"MGJRouterParameterCompletion";
 NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
-
 @interface MGJRouter ()
+
 /**
  *  保存了所有已注册的 URL
  *  结构类似 @{@"beauty": @{@":id": {@"_", [block copy]}}}
  */
 @property (nonatomic) NSMutableDictionary *routes;
+
 @end
 
 @implementation MGJRouter
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static MGJRouter *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -37,28 +37,27 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return instance;
 }
 
-+ (void)registerURLPattern:(NSString *)URLPattern toHandler:(MGJRouterHandler)handler
-{
++ (void)registerURLPattern:(NSString *)URLPattern toHandler:(MGJRouterHandler)handler {
     [[self sharedInstance] addURLPattern:URLPattern andHandler:handler];
 }
 
-+ (void)deregisterURLPattern:(NSString *)URLPattern
-{
++ (void)registerURLPattern:(NSString *)URLPattern toObjectHandler:(MGJRouterObjectHandler)handler {
+    [[self sharedInstance] addURLPattern:URLPattern andObjectHandler:handler];
+}
+
++ (void)deregisterURLPattern:(NSString *)URLPattern {
     [[self sharedInstance] removeURLPattern:URLPattern];
 }
 
-+ (void)openURL:(NSString *)URL
-{
++ (void)openURL:(NSString *)URL {
     [self openURL:URL completion:nil];
 }
 
-+ (void)openURL:(NSString *)URL completion:(void (^)(id result))completion
-{
++ (void)openURL:(NSString *)URL completion:(void (^)(id result))completion {
     [self openURL:URL withUserInfo:nil completion:completion];
 }
 
-+ (void)openURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo completion:(void (^)(id result))completion
-{
++ (void)openURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo completion:(void (^)(id result))completion {
     URL = [URL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *parameters = [[self sharedInstance] extractParametersFromURL:URL matchExactly:NO];
     
@@ -83,8 +82,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     }
 }
 
-+ (BOOL)canOpenURL:(NSString *)URL
-{
++ (BOOL)canOpenURL:(NSString *)URL {
     return [[self sharedInstance] extractParametersFromURL:URL matchExactly:NO] ? YES : NO;
 }
 
@@ -92,8 +90,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return [[self sharedInstance] extractParametersFromURL:URL matchExactly:YES] ? YES : NO;
 }
 
-+ (NSString *)generateURLWithPattern:(NSString *)pattern parameters:(NSArray *)parameters
-{
++ (NSString *)generateURLWithPattern:(NSString *)pattern parameters:(NSArray *)parameters {
     NSInteger startIndexOfColon = 0;
     
     NSMutableArray *placeholders = [NSMutableArray array];
@@ -130,8 +127,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return parsedResult;
 }
 
-+ (id)objectForURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo
-{
++ (id)objectForURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo {
     MGJRouter *router = [MGJRouter sharedInstance];
     
     URL = [URL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -148,34 +144,25 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return nil;
 }
 
-+ (id)objectForURL:(NSString *)URL
-{
++ (id)objectForURL:(NSString *)URL {
     return [self objectForURL:URL withUserInfo:nil];
 }
 
-+ (void)registerURLPattern:(NSString *)URLPattern toObjectHandler:(MGJRouterObjectHandler)handler
-{
-    [[self sharedInstance] addURLPattern:URLPattern andObjectHandler:handler];
-}
-
-- (void)addURLPattern:(NSString *)URLPattern andHandler:(MGJRouterHandler)handler
-{
+- (void)addURLPattern:(NSString *)URLPattern andHandler:(MGJRouterHandler)handler {
     NSMutableDictionary *subRoutes = [self addURLPattern:URLPattern];
     if (handler && subRoutes) {
         subRoutes[@"_"] = [handler copy];
     }
 }
 
-- (void)addURLPattern:(NSString *)URLPattern andObjectHandler:(MGJRouterObjectHandler)handler
-{
+- (void)addURLPattern:(NSString *)URLPattern andObjectHandler:(MGJRouterObjectHandler)handler {
     NSMutableDictionary *subRoutes = [self addURLPattern:URLPattern];
     if (handler && subRoutes) {
         subRoutes[@"_"] = [handler copy];
     }
 }
 
-- (NSMutableDictionary *)addURLPattern:(NSString *)URLPattern
-{
+- (NSMutableDictionary *)addURLPattern:(NSString *)URLPattern {
     NSArray *pathComponents = [self pathComponentsFromURL:URLPattern];
 
     NSMutableDictionary* subRoutes = self.routes;
@@ -191,8 +178,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
 #pragma mark - Utils
 
-- (NSMutableDictionary *)extractParametersFromURL:(NSString *)url matchExactly:(BOOL)exactly
-{
+- (NSMutableDictionary *)extractParametersFromURL:(NSString *)url matchExactly:(BOOL)exactly {
     NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
     
     parameters[MGJRouterParameterURL] = url;
@@ -257,8 +243,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return parameters;
 }
 
-- (void)removeURLPattern:(NSString *)URLPattern
-{
+- (void)removeURLPattern:(NSString *)URLPattern {
     NSMutableArray *pathComponents = [NSMutableArray arrayWithArray:[self pathComponentsFromURL:URLPattern]];
     
     // 只删除该 pattern 的最后一级
@@ -282,9 +267,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     }
 }
 
-- (NSArray*)pathComponentsFromURL:(NSString*)URL
-{
-
+- (NSArray*)pathComponentsFromURL:(NSString*)URL {
     NSMutableArray *pathComponents = [NSMutableArray array];
     if ([URL rangeOfString:@"://"].location != NSNotFound) {
         NSArray *pathSegments = [URL componentsSeparatedByString:@"://"];
@@ -306,8 +289,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     return [pathComponents copy];
 }
 
-- (NSMutableDictionary *)routes
-{
+- (NSMutableDictionary *)routes {
     if (!_routes) {
         _routes = [[NSMutableDictionary alloc] init];
     }

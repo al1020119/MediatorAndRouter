@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Target_MediatorNextService : NSObject
+@interface Target_MediatorNextViewController : NSObject
 
-- (UIViewController *)Action_NextViewController:(NSDictionary *)param;
+- (UIViewController *)Action_MediatorNextViewController:(NSDictionary *)param;
 
 @end

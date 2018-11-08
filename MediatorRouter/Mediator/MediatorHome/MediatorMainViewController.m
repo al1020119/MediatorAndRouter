@@ -36,7 +36,6 @@
     [super viewDidLoad];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:@selector(leftBarButtonItemAction)];
-    // Do any additional setup after loading the view.
     
     [self addChildVC:[[CTMediator sharedInstance] getHomeVCWithTitle:@"首页1"] title:@"首页" image:@"tabbar_platform_normal" selectedImage:@"tabbar_platform_select"];
     [self addChildVC:[[CTMediator sharedInstance] getCategoryVCWithTitle:@"分类1"]  title:@"分类" image:@"tabbar_mine_normal" selectedImage:@"tabbar_mine_select"];
